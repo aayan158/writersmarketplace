@@ -1,0 +1,172 @@
+html,
+body {
+    background-color: #101728;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #101728;
+}
+
+.logo {
+    display: inline;
+}
+
+#image_logo {
+    margin-bottom:1px;
+    margin-right: 1px;
+    padding: 0px;
+}
+
+#company_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 60px;
+    padding-left: 10px;
+}
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #101728;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.navbar-button:hover {
+    background: linear-gradient(to right, #9340ff, #ff3c5f);
+}
+
+#slogan {
+    margin-left: 175px;
+    margin-top: 50px;
+    font-size: 200px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 20px #1f41bb;
+
+}
+
+.main_buttons {
+    display: inline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+
+}
+
+.button {
+    flex-basis: 30%;
+    padding: 50px;
+    background: linear-gradient(to right, #9340ff, #ff3c5f);
+    color: white;
+    border: none;
+    border-radius: 115px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #9340ff, #ff3c5f);
+}
+
+#about-general {
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #1f41bb;
+
+
+}
+
+#general-text {
+    text-align: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#about-money {
+    color: white;
+    font-size: 90px;
+    padding-right: 80px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #1f41bb;
+}
+
+#money-text{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+#money-img{
+    padding-right: 80px;
+}
+
+#about-feedback {
+    width:100%;
+    text-align: right;
+    color: white;
+    font-size: 90px;
+    padding-left:1px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #1f41bb;
+}
+
+#feedback-text{
+    text-align: right;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    padding-right:10px;
+}
+
+#feedback-img{
+    padding-left:70px;
+}
+
+#about-SAS {
+    color: white;
+    font-size: 90px;
+    padding-right: 100px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #1f41bb;
+
+
+}
+
+#SAS-text{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+#SAS-img{
+    padding-left:60px;
+}

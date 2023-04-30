@@ -1,0 +1,111 @@
+body {
+    background-color: #101728;
+    color: white;
+    font-family: Kanit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gradient-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #9340ff, #ff3c5f);
+    box-shadow: 0 0 20px #55a0ff;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    width: 70%;
+    min-height: 70%;
+    margin-top: 10%;
+}
+
+.gradient-box:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #55a0ff;
+    filter: blur(40px);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    font-family: Kanit, sans-serif;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 110px;
+    right:1135px;
+    font-family: Kanit, sans-serif;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    font-family: Kanit, sans-serif;
+}
+
+.contact-button {
+    background-color: #0d2b50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-family: Kanit, sans-serif;
+    padding-inline-start: 10px;
+    padding-right: 70px;
+}
+
+.contact-button:hover {
+    background-color: #55a0ff;
+}
+
+#view{
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+#next{
+    padding-right: 15px;
+    color: white;
+}

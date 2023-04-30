@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styling_login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="login-heading">LOGIN</h1>
+		<form class="login-form">
+			<div class="login-right">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" placeholder="Enter your username" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password" required>
+				<a href = "write.html"><input type="submit" value="Login" ></a>
+				<form class="login-form" id="login-form">
+			</div>
+		</form>
+	</div>
+	<script>
+		const form = document.getElementById('login-form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			window.location.href = 'index.html';
+		});
+	</script>	
+</body>
+</html>

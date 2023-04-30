@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Write Your Story</title>
+    <link rel="stylesheet" type="text/css" href="styling_write.css">
+  </head>
+  <body>
+    <div class="title-container">
+      <h1 class="title">Write Your Story</h1>
+    </div>
+    <div class="input-container">
+      <input type="text" id="story-title" placeholder="Title your story...">
+      <textarea id="story-text" placeholder="Start writing your story here..."></textarea>
+      <button class="buttin" id="publish-btn">Publish</button>
+      <br>
+      <br>
+      <button class="buttin" id="view"><a href = "writings.html">View Writings</a></button>
+    </div>
+    <div id="popup-container"></div>
+    <script>
+
+const publishBtn = document.getElementById("publish-btn");
+const storyTitleInput = document.getElementById("story-title");
+const storyTextInput = document.getElementById("story-text");
+const popupContainer = document.getElementById("popup-container");
+
+publishBtn.addEventListener("click", () => {
+  const storyTitle = storyTitleInput.value;
+  const storyText = storyTextInput.value;
+
+  if (storyTitle === "" || storyText === "") {
+    alert("Please enter a title and text for your story.");
+    return;
+  }
+
+  storyTitleInput.value = "";
+  storyTextInput.value = "";
+
+  const popup = document.createElement("div");
+  popup.className = "popup";
+  popup.textContent = "Story published!";
+  popupContainer.appendChild(popup);
+
+  setTimeout(() => {
+    popupContainer.removeChild(popup);
+  }, 3000);
+});
+
+    </script>
+  </body>
+</html>
